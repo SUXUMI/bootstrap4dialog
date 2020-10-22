@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap4dialog",
+  "version": "1.0.0",
+  "description": "Bootstrap Modal for Bootstrap 4.*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GR <admin@admin.ge>",
+  "license": "MIT",
+  "dependencies": {
+    "g": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0"
+  }
+}
