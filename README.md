@@ -36,7 +36,7 @@ Bootstrap4Dialog.show({
             duration: 0.5
         })
 
-        $('#btn-cancel-2').focus();
+        $('#btn-cancel').focus();
     },
     close: function() { 
         Bootstrap4Dialog.show({
