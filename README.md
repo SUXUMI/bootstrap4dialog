@@ -11,10 +11,18 @@ Create <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4 / Bootstr
 
 ## Usage
 
-Simple ample:
+Simple sample:
 ```
 Bootstrap4Dialog.show({
     title: 'Title'
+})
+```
+
+Sample without title:
+```
+Bootstrap4Dialog.show({
+    title: 'Message',
+    duration: 5
 })
 ```
 
