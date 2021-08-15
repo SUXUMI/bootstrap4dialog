@@ -21,7 +21,7 @@ Bootstrap4Dialog.show({
 Sample without title:
 ```
 Bootstrap4Dialog.show({
-    title: 'Message',
+    message: 'Message',
     duration: 5
 })
 ```
