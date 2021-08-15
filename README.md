@@ -9,7 +9,10 @@ Create <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4 / Bootstr
 
 ================
 
-## Usage
+### Installation
+``npm i gr-bootstrap4dialog``
+
+### Usage
 
 Simple sample:
 ```
