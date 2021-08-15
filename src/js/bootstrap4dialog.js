@@ -280,7 +280,7 @@
      *
      * @param object dialog
      */
-    destroy = function(dialog) {
+    var destroy = function(dialog) {
         try {
             setTimeout(function() {
                 dialog.remove();
