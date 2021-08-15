@@ -3,7 +3,7 @@ Bootstrap4Dialog
 
 ## Description
 
-Create <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a> Dialog Modals Easily.
+Create <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4 / Bootstrap 5</a> Dialog Modals Easily.
 
 [![Latest release](https://img.shields.io/github/release/SUXUMI/bootstrap4dialog.svg)](https://github.com/SUXUMI/bootstrap4dialog/releases/latest)
 
