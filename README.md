@@ -70,3 +70,7 @@ Bootstrap4Dialog.show({
     ]
 })
 ```
+
+### Warning
+
+For Bootstrap v4 please use release 1.1.0
