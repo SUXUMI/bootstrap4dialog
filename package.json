@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap4dialog",
+  "name": "gr-bootstrap4dialog",
   "version": "2.0.0",
   "description": "Bootstrap Modal for Bootstrap 4.*",
   "main": "index.js",
