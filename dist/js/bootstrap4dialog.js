@@ -1,6 +1,6 @@
 /**
  * Bootstrap Modal for Bootstrap 4.*
- * 
+ *
  * @author GR <admin@admin.ge>, https://github.com/SUXUMI
  * @source https://github.com/SUXUMI/bootstrab4dialog
  * @description Bootstrap Modal for Bootstrap 4.*
@@ -24,8 +24,8 @@
 })(this ? this : window, function ($) {
     /**
      * Set default global options
-     * 
-     * @param {} options 
+     *
+     * @param {} options
      */
     var Bootstrap4Dialog = function (options) {
         $.extend(true, this.defaultOptions, options);
@@ -47,7 +47,7 @@
     Bootstrap4Dialog.SIZE_MEDIUM = "";
     Bootstrap4Dialog.SIZE_LARGE = "modal-lg";
     Bootstrap4Dialog.SIZE_EXTRA_LARGE = "modal-xl";
-    
+
     Bootstrap4Dialog.BACKDROP_YES = "true";
     Bootstrap4Dialog.BACKDROP_NO = "";
     Bootstrap4Dialog.BACKDROP_STATIC = "static";
@@ -67,7 +67,7 @@
         backdrop: Bootstrap4Dialog.BACKDROP_YES,
         duration: 0, // SECONDS - how long the dialog should be displayed
         autodestroy: true,
-        
+
         open: null,
         close: null,
         buttons: [],
@@ -76,7 +76,7 @@
         // animate: true,
         // tabindex: -1,
     };
-    
+
     /**
      * Prepares the dialog
      *
@@ -94,7 +94,7 @@
     		if (!_options['title'] && !_options['message'] && (!_options['buttons'] || !_options['buttons'].length)) {
     			return false;
             }
-            
+
     		var id = _options['id'] || 'modalWindow_' + uniqid();
 
     		var html =
@@ -107,9 +107,7 @@
 
     						  '<div class="modal-header rounded">'
     							+ '<h6 class="modal-title"></h6>'
-    					     	+ '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'
-    					     	+ '<span aria-hidden="true">&times;</span>'
-    					     	+ '</button>'
+							+ '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'
     				     	+ '</div>'
     					}
 
@@ -132,11 +130,11 @@
     		        + '</div>'
     	        + '</div>'
             ;
-            
+
     		$('body').append( html );
 
     		var _modal_container = $('#' + id);
-            
+
             // append title
     		if (_options['title'] && _options['title'].length) {
     			_modal_container.find('.modal-title').html( _options['title'] );
@@ -154,15 +152,15 @@
     		if (!_options['title'] && !_options['message'] && _options['buttons'] && _options['buttons'].length) {
     			_modal_container.find('.modal-footer').css({'border-top':'0px'});
             }
-            
+
     		if (_options['size'] && _options['size'].length) {
     			_modal_container.find('.modal-dialog').addClass(_options.size);
     		}
-            
+
     		if (_options['centered']) {
     			_modal_container.find('.modal-dialog').addClass('modal-dialog-centered');
     		}
-            
+
     		if (_options['scrollable']) {
     			_modal_container.find('.modal-dialog').addClass('modal-dialog-scrollable');
     		}
@@ -244,7 +242,7 @@
             if (_options['autodestroy']) {
                 dialog.on('hidden.bs.modal', function() { destroy(dialog) });
             }
-            
+
             if (_options['duration']) {
                 dialog.on('shown.bs.modal', function() {
                     setTimeout(function() {
@@ -280,7 +278,7 @@
      *
      * @param object dialog
      */
-    destroy = function(dialog) {
+    var destroy = function(dialog) {
         try {
             setTimeout(function() {
                 dialog.remove();
@@ -292,8 +290,8 @@
     };
 
     /**
-     * Generates uniqid 
-     * 
+     * Generates uniqid
+     *
      * @source - https://github.com/makeable/uuid-v4.js/blob/master/uuid-v4.js
      */
     var uniqid = function () {
@@ -317,6 +315,6 @@
         }
         return uuid;
     };
-    
+
     return Bootstrap4Dialog;
 });
